@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
 
+
 function Home() {
   return (
     <Container>
+      <h1 id="models"/>
       <Section
         title="Model S"
         description="Order Online For Touchless Delivery"
@@ -13,13 +15,7 @@ function Home() {
         rightBtnText="Existing Inventory"
       />
 
-      <Section
-        title="Model Y"
-        description=" Order Online For Touchless Delivery"
-        backgroundImg="model-y.jpg"
-        leftBtnText="Custom order"
-        rightBtnText="Existing inventory"
-      />
+      <h1 id="model3"/>
       <Section
         title="Model 3"
         description=" Order Online For Touchless Delivery"
@@ -27,10 +23,21 @@ function Home() {
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
+      <h1 id="modelx" />
+
       <Section
         title="Model X"
         description=" Order Online For Touchless Delivery"
         backgroundImg="model-x.jpg"
+        leftBtnText="Custom order"
+        rightBtnText="Existing inventory"
+      />
+      <h1 id="modely" />
+
+      <Section
+        title="Model Y"
+        description=" Order Online For Touchless Delivery"
+        backgroundImg="model-y.jpg"
         leftBtnText="Custom order"
         rightBtnText="Existing inventory"
       />
@@ -53,6 +60,7 @@ function Home() {
         description=""
         backgroundImg="accessories.jpg"
         leftBtnText="Shop now"
+        rightBtnText="Learn more"
       />
     </Container>
   );

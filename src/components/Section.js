@@ -48,6 +48,8 @@ const Wrap = styled.div`
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+
+ 
 `;
 
 const ButtonGroup = styled.div`
@@ -71,16 +73,22 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   cursor: pointer;
+  :hover{
+    background-color: rgb(58, 156, 151);
+    transform: scale(1.1);
+  }
 `;
 
-const RightButton = styled.div`
+const RightButton = styled(LeftButton)`
   background: white;
   opacity: 0.65;
   color: black;
+  
 `;
 const DownArrow = styled.img`
   height: 40px;
   overflow-x: hidden;
   animation: animationDown infinite 1.5s;
 `;
-const Buttons = styled.div``;
+const Buttons = styled.div`
+`;

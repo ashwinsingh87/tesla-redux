@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { AiOutlineMenu } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
+import { Link } from "react-scroll";
 // import  {selectCars} from "../features/car/carSlice";
 // import { useSelector } from "react-redux";
 
@@ -12,14 +13,22 @@ function Header() {
 
   return (
     <Container>
-      <a>
+      <Link to="models" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
         <img src="/images/logo.svg" alt="" />
-      </a>
+      </Link>
       <Menu>
-        <a href="#">Model S</a>
-        <a href="#">Model 3</a>
-        <a href="#">Model X</a>
-        <a href="#">Model Y</a>
+        <Link to="models" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} >
+          Model S
+        </Link>
+        <Link to="model3" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} >
+          Model 3
+        </Link>
+        <Link to="modelx" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
+          Model X
+        </Link>
+        <Link to="modely" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
+          Model Y
+        </Link>
       </Menu>
       <RightMenu>
         <a href="#">Shop</a>
@@ -79,7 +88,15 @@ const Menu = styled.div`
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
+    transition: all .2s ease-in-out;
+    :hover{
+     
+      transform: scale(1.1);
+    }
   }
+  // Link:hover{
+  //   background-color: rgb(58, 156, 151);
+  // }
   @media (max-width: 768px) {
     display: none;
   }
@@ -91,11 +108,21 @@ const RightMenu = styled.div`
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 10px;
+    transition: all .2s ease-in-out;
+    :hover{
+     
+      transform: scale(1.1);
+    }
   }
 `;
 
 const CustomMenu = styled(AiOutlineMenu)`
   cursor: pointer;
+  transition: all .2s ease-in-out;
+  :hover{
+   
+    transform: scale(1.1);
+  }
 `;
 
 const BurgerNav = styled.div`
@@ -116,9 +143,14 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-
+    transition: all .1s ease-in-out;
+    :hover{
+      background-color: rgb(211, 228, 232);
+      transform: scale(1.05);
+    }
     a {
       font-weight: 600;
+      
     }
   }
 `;
