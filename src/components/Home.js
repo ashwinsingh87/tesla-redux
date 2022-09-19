@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
-
+import Footer from "./Footer";
 
 function Home() {
   return (
@@ -62,6 +62,7 @@ function Home() {
         leftBtnText="Shop now"
         rightBtnText="Learn more"
       />
+      <Footer/>
     </Container>
   );
 }

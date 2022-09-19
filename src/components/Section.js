@@ -74,14 +74,14 @@ const LeftButton = styled.div`
   font-size: 12px;
   cursor: pointer;
   :hover{
-    background-color: rgb(58, 156, 151);
+    background: orange;;
     transform: scale(1.1);
   }
 `;
 
 const RightButton = styled(LeftButton)`
   background: white;
-  opacity: 0.65;
+  opacity: 0.85;
   color: black;
   
 `;
