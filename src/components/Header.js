@@ -13,20 +13,55 @@ function Header() {
 
   return (
     <Container>
-      <Link to="models" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
+      <Link
+        to="models"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        style={{ cursor: "pointer" }}
+      >
         <img src="/images/logo.svg" alt="" />
       </Link>
       <Menu>
-        <Link to="models" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} >
+        <Link
+          to="models"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: "pointer" }}
+        >
           Model S
         </Link>
-        <Link to="model3" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}} >
+        <Link
+          to="model3"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: "pointer" }}
+        >
           Model 3
         </Link>
-        <Link to="modelx" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
+        <Link
+          to="modelx"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: "pointer" }}
+        >
           Model X
         </Link>
-        <Link to="modely" spy={true} smooth={true} offset={0} duration={500} style={{cursor: 'pointer'}}>
+        <Link
+          to="modely"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          style={{ cursor: "pointer" }}
+        >
           Model Y
         </Link>
       </Menu>
@@ -40,6 +75,55 @@ function Header() {
           <CustomClose onClick={() => setBurgerStatus(false)} />
         </CloseWrapper>
 
+        <li>
+          <Link
+            to="models"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            style={{ cursor: "pointer" }}
+          >
+            Model S
+          </Link>
+        </li>
+        <li>
+          {" "}
+          <Link
+            to="model3"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            style={{ cursor: "pointer" }}
+          >
+            Model 3
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="modelx"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            style={{ cursor: "pointer" }}
+          >
+            Model X
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="modely"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            style={{ cursor: "pointer" }}
+          >
+            Model Y
+          </Link>
+        </li>
         <li>
           <a href="#">Existing Inventory</a>{" "}
         </li>
@@ -88,9 +172,8 @@ const Menu = styled.div`
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
-    transition: all .2s ease-in-out;
-    :hover{
-     
+    transition: all 0.2s ease-in-out;
+    :hover {
       transform: scale(1.1);
     }
   }
@@ -108,9 +191,8 @@ const RightMenu = styled.div`
     font-weight: 600;
     text-transform: uppercase;
     margin-right: 10px;
-    transition: all .2s ease-in-out;
-    :hover{
-     
+    transition: all 0.2s ease-in-out;
+    :hover {
       transform: scale(1.1);
     }
   }
@@ -118,9 +200,8 @@ const RightMenu = styled.div`
 
 const CustomMenu = styled(AiOutlineMenu)`
   cursor: pointer;
-  transition: all .2s ease-in-out;
-  :hover{
-   
+  transition: all 0.2s ease-in-out;
+  :hover {
     transform: scale(1.1);
   }
 `;
@@ -143,14 +224,13 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    transition: all .1s ease-in-out;
-    :hover{
+    transition: all 0.1s ease-in-out;
+    :hover {
       background-color: rgb(211, 228, 232);
       transform: scale(1.05);
     }
     a {
       font-weight: 600;
-      
     }
   }
 `;
